@@ -15,3 +15,10 @@
 .about h3{font-size:22px;line-height:1.6}.about h3+p{margin-top:16px}.year-intro{margin-top:32px}
 .project-credit{grid-template-columns:1fr 1.3fr;align-items:start}.coordinator{display:flex;align-items:center;gap:18px;background:transparent;padding:16px 0}.coordinator>img{width:90px;height:90px;max-height:none;flex:0 0 90px;object-fit:cover;object-position:center 30%;border-radius:50%}.coordinator>div{padding:0}.coordinator .eyebrow{font-size:12px;margin-bottom:6px}.coordinator h3{font-size:19px}.coordinator p:last-child{font-size:14px;margin-top:5px}.partners .partner img{height:70px;width:110px}.hero-note{font-size:14px;line-height:1.7}
 @media(max-width:760px){.project-credit{grid-template-columns:1fr}.coordinator>img{width:76px;height:76px;flex-basis:76px}.partners .partner img{height:60px;width:100px}.about h3{font-size:20px}}
+
+/* Compact logo grid, wrapping automatically as the network grows. */
+.network-brand-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:22px}
+.network-brand-grid .network-brand{display:flex;align-items:center;justify-content:center;min-width:0;max-width:none;margin:0;padding:14px;aspect-ratio:1;background:#fff}
+.network-brand-grid .network-brand img{width:100%;height:100%;object-fit:contain}
+.network-brand-grid .network-brand:hover{border-color:var(--ink);box-shadow:0 3px 12px #173f3512}
+@media(max-width:480px){.network-brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.network-brand-grid .network-brand{padding:8px}}
