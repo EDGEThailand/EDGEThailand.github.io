@@ -1,7 +1,9 @@
 const members=window.EDGE_MEMBERS||[];
+const porJaiDee=members.find(m=>m.id===73);if(porJaiDee){porJaiDee.brand='พอใจดี';porJaiDee.description='ไอศกรีมและผัก';}
+const avatarGarden=members.find(m=>m.id===5);if(avatarGarden){avatarGarden.description='น้ำผึ้งป่า และผลผลิตสดทางการเกษตร';}
 const $=s=>document.querySelector(s);
 const escapeHtml=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const businessFacebook={63:'https://www.facebook.com/profile.php?id=100063541672345&locale=th_TH',75:'https://www.facebook.com/Pinbuppha'};
+const businessFacebook={63:'https://www.facebook.com/profile.php?id=100063541672345&locale=th_TH',75:'https://www.facebook.com/Pinbuppha',5:'https://www.facebook.com/AvartarsGarden',11:'https://www.facebook.com/bannokkokna2012',12:'https://www.facebook.com/SuannAomTawan2020',33:'https://www.facebook.com/SuannAomTawan2020',53:'https://www.facebook.com/NaiSuanLeafPlate',81:'https://www.facebook.com/NaiSuanLeafPlate'};
 let shown=12;
 const ready=members.filter(m=>m.file).length;
 for(const category of [...new Set(members.map(m=>m.category))].sort()){
